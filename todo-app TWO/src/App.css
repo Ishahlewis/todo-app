@@ -1,0 +1,120 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css';
+@import 'https://fonts.googleapis.com/css?family=Montserrat&display=swap';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper{
+  width: 25em;
+  height: 35em;
+  margin:auto;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  border: 2px dotted black;
+  border-radius:1em;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+}
+
+.todo{
+  margin-bottom: 2em;
+}
+
+.item{
+  margin-bottom:1em;
+  border-radius: .5em;
+  padding: 1.5em;
+  background-color: #6C6E70;
+  color: white;
+  display: flex;
+  position: relative;
+}
+
+.priority{
+  position: absolute;
+  right: 1.5em;
+}
+
+.form-group-body{
+  display: flex;
+  margin-bottom: 1.5em;
+  background-color: #ccc;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: .5em;
+}
+
+.form-group{
+  flex: 1 0 90%;
+}
+
+.add:focus-within{
+  outline: none;
+  color: #151717;
+}
+
+.form-group input{
+  padding: 1em;
+  border-radius: .5em;
+  margin-bottom: 1em;
+  width: 94%;
+  border: none;
+}
+
+button:hover{
+  background-color:#1FFF70;
+
+}
+
+.item:hover{
+  background-color: #FF2A28;
+}
+
+button{
+  background-color: black;
+  color: white;
+  padding:1em;
+  border-radius: .5em;
+  border: none;
+  flex: 1 0 90%;
+}
+
+button:focus-within{
+  outline: none;
+}
